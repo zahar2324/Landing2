@@ -1,0 +1,48 @@
+
+@media (max-width:1793px) {
+    .header{
+        &__content{
+            margin-top: calc(100vh / 4) !important;
+           
+        }
+        
+    }
+   
+    
+}
+
+@media (max-width:1610px) {
+    .header{
+        &__content{
+            margin-left: 40px;
+            &-btn{
+                border-radius: 21px;
+      
+      padding: 17px 20px 17px 20px;
+      margin-left: 40px;
+      font-size: 30px;
+      font-weight: 700;
+      width: 413px;
+      position: relative;
+      left: -39px;
+              button{
+                font-weight: 300;
+              }
+            }
+            &-span{
+                font-size: 34px;
+      font-weight: 300;
+            }
+            &-title{
+                font-size: 77px;
+      width: 848px;
+      margin-top: 15px;
+      margin-bottom: 72px;
+      font-weight: 500;
+            }
+           
+        }
+        
+    }
+   
+}
