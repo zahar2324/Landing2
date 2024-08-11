@@ -1,0 +1,158 @@
+/*секція тарифи*/
+.page__tariffs {
+    margin: 0px;
+    width: 100%;
+    height: 865px;
+    background-color: #202020;
+  }
+  
+  .tariffs__title-container {
+    max-width: 1400px;
+    margin: 0px auto;
+  }
+  
+  .tariffs__title {
+    margin-left: 10px;
+    padding-top: 100px;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+  .tariffs__title span {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 10px 20px 40px;
+    border-radius: 24px;
+    margin-right: 3px;
+  }
+  
+  .tariffs__items {
+    max-width: 84.375rem;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 3.125rem;
+         column-gap: 3.125rem;
+  }
+  
+  .tariffs__item {
+    background-color: #f2f2f2;
+    min-height: 485px;
+    border-radius: 24px;
+    flex: 0 1 25%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center; 
+    justify-content: space-between;
+  }
+  
+  .tariffs__item:first-child {
+    margin-left: 10px;
+  }
+  
+  .tariffs__item:last-child {
+    margin-right: 10px;
+  }
+  
+  .tariffs-item__title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #000000;
+  }
+  
+  .tariffs-item__subtitle {
+    max-width: 250px;
+    color: #8e8e8e;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .tariffs-item__subtitle span {
+    color: #000000;
+  }
+  
+  .tariffs-item__text {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #a3a3a3;
+    line-height: 17.7px;
+    margin-bottom: 30px;
+  }
+  
+  .tariffs-item__price {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .tariffs-item__price span {
+    font-size: 10px;
+  }
+  
+  
+  
+  .tariffs-item__bt-1 {
+    border: 3px solid #636262;
+    background-color: #000000;
+    color: #d5d5d5;
+  }
+  
+  .tariffs-item__bt-2 {
+    color: #ff98d6;
+    background-color: #360d26;
+    border: 3px solid rgb(177, 12, 144);
+  }
+  
+  .tariffs-item__bt-3 {
+    color: #ccffbf;
+    background-color: #082501;
+    border: 3px solid rgb(43, 160, 8);
+  }
+  
+  .tariffs-item__bt-4 {
+    color: #ffd277;
+    background-color: #2b1e05;
+    border: 3px solid rgb(241, 197, 1);
+  }
+  
+  .tariffs__item-1 {
+    box-shadow: 2px 2px 6px #636262;
+  }
+  
+  .tariffs__item-2 {
+    box-shadow: 2px 2px 6px rgb(177, 12, 144);
+  }
+  
+  .tariffs__item-3 {
+    box-shadow: 2px 2px 6px rgb(43, 160, 8);
+  }
+  
+  .tariffs__item-4 {
+    box-shadow: 2px 2px 6px rgb(241, 197, 1);
+  }
+  
+  @media (max-width: 71.875rem) {
+    .tariffs__item {
+      min-height: 485px;
+      border-radius: 24px;
+      flex: 1 1 50%;
+    }
+}
+
+.tariffs-item__btn {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1.5px;
+    max-height: 55px;
+    margin-bottom: 20px;
+  }

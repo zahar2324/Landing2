@@ -10,6 +10,9 @@
         background: #fff;
         padding: 30px;
         border-radius: 21px;
+        &__burger{
+            display: none;
+        }
         &__logo{
             display: flex;
             align-items: center;
@@ -80,7 +83,7 @@
   padding: 25px 19px 25px 19px;
   margin-left: 40px;
   font-size: 26px;
-  width: 377px;
+  width: 177px;
 
                 &:hover{
                     background-color: #120e0ec0;
@@ -104,9 +107,9 @@
   color: #fff;
   padding: 22px 30px 22px 30px;
   margin-left: 40px;
-  font-size: 36px;
+  font-size: 44px;
   font-weight: 700;
-  width: 433px;
+  width: 283px;
   position: relative;
   left: -39px;
   &:hover{

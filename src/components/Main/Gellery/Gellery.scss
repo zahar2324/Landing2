@@ -1,0 +1,31 @@
+.gallery__title-container{
+    max-width: 1400px;
+    margin: 0px auto;
+ 
+  }
+  
+  .gallery__title{
+    margin-left: 10px;
+    padding-top: 100px;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 100px;
+    span {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px 10px 20px 40px;
+      border-radius: 24px;
+      margin-right: 3px;
+    }
+  }
+  
+  .gallery__slider{
+    max-width: 1400px;
+    margin: -4%;
+    margin-bottom: 100px;
+  }
+  .gallery-slider-item img{
+    width: 100%;
+    object-fit: cover;
+  }
