@@ -6,9 +6,9 @@ import Main from "./Main/Main";
 const Home: React.FC = () => {
     return (
         <>
-            <Header />
+             <Header /> 
             <Main />
-            <Footer /> 
+             <Footer />  
         </>
     );
 }

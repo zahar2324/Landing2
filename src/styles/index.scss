@@ -5,7 +5,7 @@
 	border: none;
 }
 
-*,
+*, 
 *::before,
 *::after {
 	box-sizing: border-box;
@@ -117,11 +117,11 @@ body, html {
 
 main {
    
-    display: flex;
-    flex: 1;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex: 1;
+    // align-items: center;
+    // flex-direction: column;
+    // justify-content: center;
    
    
 }
@@ -194,4 +194,8 @@ footer {
   }
     }
     
-        
+    .swipper{
+  
+      width: 90vw !important;
+      padding-right: 24px !important;
+    }

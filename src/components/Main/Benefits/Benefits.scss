@@ -1,4 +1,4 @@
-.page__benefits {
+/* .page__benefits {
     margin: 0px;
     width: 100%;
     height: 750px;
@@ -26,8 +26,11 @@
   }
   
   .benefits__items{
-    max-width: 1417px;
-    margin: 0px auto;
+   //max-width: 1550px;
+   max-width: 1261px;
+   min-height: 427px !important; 
+   
+   margin: 0px auto;
     display: flex;
     flex-direction: row;
     column-gap: 3.125rem;
@@ -35,23 +38,21 @@
   
   
   .benefits-item {
-    min-height: 287px;
+    margin-left: 20px;
+    min-width: 380px;
+    min-height: 387px;
     flex: 0 1 33.3333%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
     box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
   }
-  
-  .benefits-item:last-child{
-    margin-right: 40px;
-  }
-  
-  .benefits-item:first-child{
-  margin-left: 40px
-  }
+
+  // .benefits-item:first-child{
+  // margin-left: 5%
+  // }
   
   .benefits-item__title {
     margin-top: 20px;
@@ -81,4 +82,261 @@
     color: #8E8E8E;
     line-height: 24.51px;
   }
+   */
+
+
+  // Benefits.scss
+
+
+// .page__benefits {
+//   .swiper{
+//     margin-left: 150px !important;
+//   }
   
+//   .mySwiper {
+//     .swiper-button-next,
+//     .swiper-button-prev {
+//       color: #000; // Set color for navigation buttons
+//       width: 50px; // Set width for navigation buttons
+//       height: 50px; // Set height for navigation buttons
+//     }
+  
+//     .swiper-pagination {
+//       bottom: 10px; // Adjust pagination position
+//     }
+//   }
+//   // .swiper {
+//   //   margin-left: 54px !important;
+//   //   margin-right: 35px !important;
+  
+//   // }
+//   .wiper-slide.swiper-slide-active.benefits__item.benefits-item{
+//     margin-right: 0px !important;
+//   }
+// }
+
+// .wiper-slide.swiper-slide-active.benefits__item.benefits-item{
+//   position: relative !important;
+//   left: 300px !important;
+// }
+// .swiper-wrapper{
+//   width: 1261px !important;
+//   height: 90% !important;
+// }
+// .swiper-wrapper div{
+//   margin-right: 90px !important;
+// }
+
+
+/* //@media (max-width:1528px) {//ширина екрану
+
+
+    .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper{
+    
+      width: 90vw !important;
+     
+  }
+  .swiper-wrapper{
+    position: relative;
+    height: 91% !important;
+  }
+  .swiper-slide.swiper-slide-active.benefits__item.benefits-item{
+    height: 300px;
+    margin-right: 100px !important; 
+  }
+  .swiper-slide.swiper-slide-next.benefits__item.benefits-item{
+    height: 300px;
+    margin-right: 100px !important;
+  }
+  .swiper-button-next{
+    background-image: url('../Benefits/slidernextSVG.svg');
+    width: 57px !important;
+    height: 4% !important;
+    background-repeat: no-repeat;
+    position: absolute;
+        top: 100%;
+    
+  }
+
+
+//}
+
+ */
+
+
+
+
+
+
+
+
+.slider__control--prev {
+  cursor: pointer;
+  left: 87%;
+
+  top: 102%;
+  background-image: url('../Benefits/sliderprevSVG.svg');
+}
+
+.slider__control--next {
+  
+  cursor: pointer;
+  top: 102%;
+  right: 1%;
+  background-image: url('../Benefits/slidernextSVG.svg')
+}
+
+.benefits-item__title {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 70px;
+}
+
+.benefits-item__title span {
+  width: 50px;
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  color: #fff;
+  background: #000;
+  border-radius: 11px;
+  font-size: 31px;
+  margin-right: 20px;
+}
+
+.benefits-item__text {
+  user-select: none;
+  font-family: Alef;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.51px;
+  text-align: left;
+  color: #8E8E8E;
+}
+
+
+
+.page__benefits {
+  margin: 0;
+  width: 100%;
+  height: 750px;
+}
+
+.benefits__title-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.benefits__title {
+  margin-left: 10px;
+  padding-top: 100px;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 100px;
+  span {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 10px 20px 40px;
+    border-radius: 24px;
+    margin-right: 3px;
+  }
+}
+
+.benefits__items {
+  max-width: 1400px;
+  min-height: 380px !important;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.benefits__slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider__slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.benefits__item {
+  box-shadow: 2px 5px 6px 1px rgba(0, 0, 0, 0.25);
+  flex: 0 0 33.3333%;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-bottom: 59px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  max-width: 384px;
+  min-height: 291px;
+  margin-left: 74px;
+  margin-bottom: 30px;
+  border-radius: 19px;
+}
+
+.slider__control {
+  position: absolute;
+  top: 95%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  width: 52px; /* Adjust width if necessary */
+  height: 17px; /* Adjust height if necessary */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/* Default color for SVGs */
+.slider-icon-path {
+  fill: #8E8E8E; /* Light color */
+}
+
+/* Darker on hover */
+.slider__control--prev:hover .slider-icon-path,
+.slider__control--next:hover .slider-icon-path {
+  fill: #555; /* Darker color on hover */
+}
+
+/* Darker on active */
+.slider__control--prev:active .slider-icon-path,
+.slider__control--next:active .slider-icon-path {
+  fill: #333; /* Even darker color on active */
+}
+
+.benefits__slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider__slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  margin-bottom: 37px;
+}
+
+.benefits__item {
+  flex: 1 0 33.3333%; /* Use flexbox to manage width */
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 2px 5px 6px 1px rgba(0, 0, 0, 0.25);
+  margin-right: 9px; /* Space between items */
+  border-radius: 19px;
+}
+

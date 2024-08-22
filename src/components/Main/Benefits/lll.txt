@@ -1,0 +1,35 @@
+// import "swiper/css";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Pagination } from "swiper/modules";
+
+// const Benefits = () =>{
+//   return (
+//     <Swiper
+//       speed={400}
+//       resistanceRatio={0}
+//       className="CurrHouseSlider"
+//       grabCursor={true}
+//       lazyPreloadPrevNext={1}
+//       modules={[Pagination]}
+//       pagination={{
+//         clickable: true,
+//       }}
+//     >
+      
+//         <SwiperSlide >
+//           <img src='' alt="" className="CurrHouseImage" loading="lazy" />
+//           <div className="swiper-lazy-preloader"></div>
+//         </SwiperSlide>
+//         <SwiperSlide >
+//           <img src='' alt="" className="CurrHouseImage" loading="lazy" />
+//           <div className="swiper-lazy-preloader"></div>
+//         </SwiperSlide>
+//         <SwiperSlide >
+//           <img src='' alt="" className="CurrHouseImage" loading="lazy" />
+//           <div className="swiper-lazy-preloader"></div>
+//         </SwiperSlide>
+   
+//     </Swiper>
+//   );
+// }
+// export default Benefits

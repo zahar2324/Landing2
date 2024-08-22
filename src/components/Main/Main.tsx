@@ -8,7 +8,7 @@ const Main: React.FC = () =>{
         <>
         <main className="main">
         <Benefits/>
-        <Gellery/>
+         <Gellery/>
         <Tariffs/>
         <Question/>
         
