@@ -211,7 +211,6 @@
 }
 
 .benefits-item__text {
-  user-select: none;
   font-family: Alef;
   font-size: 18px;
   font-weight: 400;
@@ -296,6 +295,15 @@
   height: 17px; /* Adjust height if necessary */
   background-size: contain;
   background-repeat: no-repeat;
+  right: 90px;
+  &.slider__control--prev{
+    position: absolute;
+    margin-left: -88px;
+  }
+  &.slider__control--next{
+    position: absolute;
+    margin-left: 20px;
+  }
 }
 
 
@@ -321,7 +329,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 104%;
 }
 
 .slider__slides {
@@ -339,4 +347,11 @@
   margin-right: 9px; /* Space between items */
   border-radius: 19px;
 }
+
+
+
+
+
+
+
 

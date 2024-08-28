@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import '../Gellery/Gellery.scss';
-
+import '../Gellery/GelleryAdaptive.scss'
 const images = [
   process.env.PUBLIC_URL + "/gellery1.jpeg",
   process.env.PUBLIC_URL + "/gellery2.jpeg",
@@ -27,7 +27,6 @@ const Gellery: React.FC = () => {
     onSwipedLeft: nextSlide,
     onSwipedRight: prevSlide,
     trackMouse: true,
-     //swipeMinDistance: 50, // Не використовується більше
   });
 
   return (
