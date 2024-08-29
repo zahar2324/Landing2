@@ -33,3 +33,46 @@
 //   );
 // }
 // export default Benefits
+
+
+
+
+
+
+
+
+
+{isMobile ? (
+          // Для мобільних пристроїв
+        
+      
+      <div className="benefits__items">
+        <div className="benefits__slider">
+          <button className="slider__control slider__control--prev" onClick={prevSlide}>
+            {/* SVG Icon */}
+          </button>
+          <div className="slider__slides"style={{
+                transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)`,
+              }} {...handlers}>
+            {groupedBenefits.map((group, index) => (
+              <div key={index} className="slider__group">
+                {group.map((benefit, i) => (
+                  <div key={i} className="benefits__item benefits-item">
+                    <div className="benefits-item__title">
+                      <span>{index * itemsToShow + i + 1}</span> <p> {benefit.title}</p>
+                    </div>
+                    <div className="benefits-item__text">
+                      {benefit.text}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          
+          <button className="slider__control slider__control--next" onClick={nextSlide}>
+            {/* SVG Icon */}
+          </button>
+        </div>
+      </div>
+    </div>
+        ) : (

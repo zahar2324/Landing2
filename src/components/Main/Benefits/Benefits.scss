@@ -211,6 +211,7 @@
 }
 
 .benefits-item__text {
+  user-select: none;
   font-family: Alef;
   font-size: 18px;
   font-weight: 400;
@@ -232,7 +233,7 @@
   margin: 0 auto;
 }
 
-.benefits__title {
+.benefits__title {user-select: none;
   margin-left: 10px;
   padding-top: 100px;
   color: #000000;
@@ -287,7 +288,7 @@
   position: absolute;
   top: 95%;
   transform: translateY(-50%);
-  background: transparent;
+
   border: none;
   cursor: pointer;
   z-index: 10;
@@ -355,3 +356,14 @@
 
 
 
+.page__benefits.benefits .benefits__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  padding-top: 100px;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 100px;
+  position: relative;
+  right: 25%;}
