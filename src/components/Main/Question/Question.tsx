@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import '../Question/Question.scss';
-
+import "../Question/QuestionAdaptive.scss"
 const Question: React.FC = () => {
     const [openQuestion, setOpenQuestion] = useState<string | null>(null);
 
     const toggleAnswer = (questionId: string) => {
         if (openQuestion === questionId) {
-            setOpenQuestion(null); // Close the currently open question
+            setOpenQuestion(null); 
         } else {
-            setOpenQuestion(questionId); // Open the clicked question
+            setOpenQuestion(questionId); 
         }
     };
 
