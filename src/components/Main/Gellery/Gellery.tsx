@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import '../Gellery/Gellery.scss';
-import '../Gellery/GelleryAdaptive.scss'
+import '../Gellery/GelleryAdaptive.scss';
+
 const images = [
   process.env.PUBLIC_URL + "/gellery1.jpeg",
   process.env.PUBLIC_URL + "/gellery2.jpeg",
@@ -14,6 +15,15 @@ const images = [
 
 const Gellery: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -29,14 +39,24 @@ const Gellery: React.FC = () => {
     trackMouse: true,
   });
 
+  // Use a different translateX percentage based on screen width
+  const translateXPercentage = screenWidth <= 600 ? 84.88888888888889 : 100;
+
   return (
     <div className="page__gallery gallery">
       <div className="gallery__title-container">
         <h2 className="gallery__title"><span>Га</span>лерея</h2>
       </div>
       <div className="gallery__slider gallery-slider" {...handlers}>
-        <div className="gallery-slider-item">
-          <img src={images[currentIndex]} alt="img" />
+        <div
+          className="gallery-slider-wrapper"
+          style={{ transform: `translateX(-${currentIndex * translateXPercentage}%)` }}
+        >
+          {images.map((img, index) => (
+            <div className="gallery-slider-item" key={index}>
+              <img src={img} alt={`Slide ${index}`} />
+            </div>
+          ))}
         </div>
       </div>
       <div className="gallery__controls">
