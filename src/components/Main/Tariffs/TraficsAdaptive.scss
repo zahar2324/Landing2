@@ -1,97 +1,104 @@
-@media (max-width:1024px) {
-        
-    .tariffs__items {
-        display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr) ;
-    grid-column-gap: 0px !important;
-    grid-row-gap: 0px !important;
-    row-gap: 50px !important;
-    margin-left: 9vw !important;
-    div{
-        max-width: 300px;
-    }
-    }
+@media (max-width: 1024px) {
     .page__tariffs {
-        margin: 0px auto !important;
-        width: 100%;
-        height:100% !important;
-    padding-bottom: 70px;}
+      margin: 0 auto !important;
+      width: 100%;
+      height: 100% !important;
+      padding-bottom: 70px;
     }
-    
-    @media (max-width:723px) {
-        .tariffs__items div {
-            max-width: 274px !important;
+  
+    .tariffs {
+      &__items {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px !important;
+        grid-row-gap: 0px !important;
+        row-gap: 50px !important;
+        margin-left: 9vw !important;
+  
+        div {
+          max-width: 300px;
         }
-        .tariffs__items {
-       
-            margin-left: 1vw !important;
-        }
+      }
     }
-    
-    
-
-    @media (max-width:600px) {
-     
-        .tariffs__items {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr) !important;
-            grid-template-rows: 1fr !important;
-            grid-column-gap: 195px  !important;
-            grid-row-gap: 71px !important;
+  }
+  
+  @media (max-width: 723px) {
+    .tariffs {
+      &__items {
+        div {
+          max-width: 274px !important;
         }
-        .tariffs__items div {
-            width: 307px !important;
+        margin-left: 1vw !important;
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .tariffs {
+      &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: 1fr !important;
+        grid-column-gap: 195px !important;
+        grid-row-gap: 71px !important;
+        margin-left: 4vw !important;
+  
+        div {
+          width: 307px !important;
         }
-        .tariffs__items {
-            margin-left: 4vw !important;
-        }
-    }    
-
-@media (max-width:488px) {
-     
-    .tariffs__items {
+      }
+    }
+  }
+  
+  @media (max-width: 488px) {
+    .tariffs {
+      &__items {
         display: grid;
         grid-template-columns: repeat(4, 1fr) !important;
         grid-template-rows: 1fr !important;
         grid-column-gap: 111px !important;
         grid-row-gap: 71px !important;
-    }
-    .tariffs__items div {
-        width: 307px !important;
-    }
-    .tariffs__items {
+  
+        div {
+          width: 307px !important;
+        }
+  
         margin-left: 4vw !important;
+      }
     }
-}
-
-@media (max-width: 431px) {
-    .tariffs__items {
-   
-        grid-column-gap: 40px !important;
-
-    }
-    .tariffs__items div {
-        width: 307px !important;
-        margin-left: 28px;
-    }
-}
-
-@media (max-width: 412px) {
-    .tariffs__items {
-        grid-column-gap: 4px !important;
-    }
-}
-.tariffs__control {
-    display: none; // Hide by default
   }
   
-  @media (max-width: 600px) {
-    .tariffs__control {
-      display: block; // Show on small screens
+  @media (max-width: 431px) {
+    .tariffs {
+      &__items {
+        grid-column-gap: 40px !important;
+  
+        div {
+          width: 307px !important;
+          margin-left: 28px;
+        }
+      }
     }
   }
-  .tariffs__control--btns{
+  
+  @media (max-width: 412px) {
+    .tariffs {
+      &__items {
+        grid-column-gap: 4px !important;
+      }
+    }
+  }
+  
+  .tariffs__control {
+    display: none; 
+  
+    @media (max-width: 600px) {
+      display: block; 
+    }
+  }
+  
+  .tariffs__control--btns {
     display: flex;
     justify-content: space-between;
     max-width: 103px;
@@ -99,22 +106,20 @@
     right: -53%;
     top: 22px;
   }
-  .tariffs__control svg{
+  
+  .tariffs__control svg {
     min-width: 180%;
   }
-
-
-
-
+  
   .slider-icon-path {
+    fill: #8e8e8e;
   
-    fill: #8E8E8E; 
+    &:hover {
+      fill: #555;
+    }
+  
+    &:active {
+      fill: #333;
+    }
   }
   
-  .tariffs__control:hover .slider-icon-path {
-    fill: #555; 
-  }
-  
-  .tariffs__control:active .slider-icon-path {
-    fill: #333; 
-  }

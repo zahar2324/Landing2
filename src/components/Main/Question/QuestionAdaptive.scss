@@ -1,43 +1,65 @@
-@media (max-width:777px) {
-    .faq-container {
+@media (max-width: 71.875rem) {
+    .tariffs__item {
+      min-height: 485px;
+      border-radius: 24px;
+      flex: 1 1 50%;
+    }
+}
+@media (max-width: 777px) {
+    .faq {
+      &-container {
         display: flex;
         flex-direction: column;
+      }
     }
-    .nav__logo {
+  
+    .nav {
+      &__logo {
         display: flex;
         align-items: center;
         font-size: 59px;
         font-weight: 500;
-    }.nav__logo span {
-        text-transform: uppercase;
-        margin-right: 10px;
-        color: #fff;
-        width: 76px;
-        height: 76px;
-        background-color: #000;
-        border-radius: 18px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  
+        span {
+          text-transform: uppercase;
+          margin-right: 10px;
+          color: #fff;
+          width: 76px;
+          height: 76px;
+          background-color: #000;
+          border-radius: 18px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
     }
-    .faq-title {
+  
+    .faq {
+      &-title {
         font-size: 34px;
         margin-top: 54px;
         font-weight: 700;
         line-height: 42.47px;
         margin-bottom: 23px;
-    }
-    .faq-subtitle {
+      }
+  
+      &-subtitle {
         margin-top: 30px;
         font-size: 32px;
         font-weight: 700;
         color: #000000;
+      }
     }
-}
-@media (max-width:393px) {
-    .faq-icon {
+  }
+  
+  @media (max-width: 393px) {
+    .faq {
+      &-icon {
         position: absolute;
         right: 16px;
+      }
     }
-}
+  }
+  

@@ -1,115 +1,85 @@
-.gallery__slider {
-  max-width: 1400px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
+.gallery {
+  font-family: Trebuchet MS !important;
+  &__slider {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
 
-.gallery-slider-wrapper {
-  display: flex;
-  transition: transform 0.5s ease;
-}
+  &-slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
 
-.gallery-slider-item {
-  width:100%; /* Зміни це значення, щоб визначити видимість наступного слайда */
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &-slider-item {
+    width: 100%; 
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-}
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
 
-.gallery-slider-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+  &__controls {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-top: 93px;
+    position: relative;
+    left: 28%;
+  }
 
-.gallery__controls {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
+  &__control {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 72px;
+    height: 37px;
+    margin: 100px 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
 
-.gallery__control {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  width: 72px;
-  height: 37px;
-  margin: 0 20px;
-}
+    svg {
+      min-width: 130% !important;
+    }
 
-.slider-icon-path {
-  fill: #8E8E8E;
-}
+    .slider-icon-path {
+      fill: #8E8E8E;
 
-.gallery__control:hover .slider-icon-path {
-  fill: #555;
-}
+      &:hover {
+        fill: #555;
+      }
 
-.gallery__control:active .slider-icon-path {
-  fill: #333;
-}
+      &:active {
+        fill: #333;
+      }
+    }
+  }
 
+  &__title {
+    margin-left: 10px;
+    padding-top: 100px;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 100px;
 
-.gallery__controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 93px;
-  position: relative;
-  left: 28%;
-}
-
-.gallery__control {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  width: 72px;
-  height: 37px;
-  margin: 100px 40px;
-  cursor: pointer;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-
-
-.slider-icon-path {
-  
-  fill: #8E8E8E; 
-}
-
-.gallery__control:hover .slider-icon-path {
-  fill: #555; 
-}
-
-.gallery__control:active .slider-icon-path {
-  fill: #333; 
-}
-
-.gallery__control svg{
-  min-width: 130% !important;
-}
-
-
-
-.gallery__title {
-  margin-left: 10px;
-  padding-top: 100px;
-  color: #000000;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 100px;
-  span {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px 10px 20px 40px;
-    border-radius: 24px;
-    margin-right: 3px;
+    span {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px 10px 20px 40px;
+      border-radius: 24px;
+      margin-right: 3px;
+    }
   }
 }

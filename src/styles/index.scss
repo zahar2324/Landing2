@@ -51,10 +51,10 @@ address {
 /* Form */
 
 input, textarea, button, select {
-	font-family: inherit;
+	font-family:Trebuchet MS !important;
     font-size: inherit;
     color: inherit;
-    background-color: transparent;
+  
 }
 
 input::-ms-clear {
@@ -87,7 +87,7 @@ legend {
 	display: block;
 }
 .app{
-    font-family: "Roboto", sans-serif;
+    font-family: Trebuchet MS !important;
     font-style: normal;
     font-size:24px;
     font-weight: 700;
@@ -100,12 +100,7 @@ legend {
     min-height: 100vh;
 }
 
-body, html {
-    margin: 0;
-    height: 100%;
-    overflow-x: hidden;
-    color: #000;
-}
+
 
 
 
@@ -137,7 +132,7 @@ footer {
 
 }
 
-/*--------Добавлені стилі для кнопок всіх!!!!--------*/
+
 
 [class*="btn"] {
    
@@ -199,3 +194,18 @@ footer {
       width: 90vw !important;
       padding-right: 24px !important;
     }
+
+@font-face {
+  font-family: Trebuchet MS;
+  src: url(../styles/trebuc.ttf);
+  src: url(../styles/Trebuchet-MS-Italic.ttf);
+
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  color: #000;
+  font-family:  Trebuchet MS !important;
+}
