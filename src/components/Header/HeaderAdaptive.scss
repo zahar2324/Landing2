@@ -403,7 +403,7 @@ right: 6px !important;
 @media (max-width:994px) {
     .header{
         &__content{
-            margin-top: calc(100vh / 5) !important;
+            margin-top: 38vh !important;
            
         }
         
@@ -413,10 +413,10 @@ right: 6px !important;
 
 @media (max-width:525px) {
     .header__content-title {
-        font-size: 28px;
-        width: 331px;
+        font-size: 36px;
+        width: 380px;
         margin-top: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 52px;
         font-weight: 500;
     }
     .header__content-span {
@@ -436,5 +436,13 @@ right: 6px !important;
         width: 246px;
         position: relative;
         left: -39px;
+    }
+}
+
+@media (max-width:1259px) {
+    .header__content-btn button {
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-size: 19px;
     }
 }
