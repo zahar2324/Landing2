@@ -83,3 +83,22 @@
     }
   }
   
+  @media (max-width:763px) {
+    .gallery__title{
+      font-size: 32px;
+      span{
+        background-color: #000000;
+        color: #ffffff;
+        padding: 12px 12px 12px 12px;
+        border-radius: 12px;
+        margin-right: 3px;
+      }
+    }
+  } 
+   @media (max-width:485px) {
+    
+    .gallery__title {
+      position: relative;
+      right: 26%;
+    }
+      }

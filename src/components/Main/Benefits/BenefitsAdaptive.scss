@@ -405,3 +405,18 @@
       margin-right: 3px;
   }
   }
+
+  @media (min-width:1629px) {
+    .slider__group.slider__group--1 {
+      margin-right: 52% !important;
+      margin-left: 10% !important;
+  }
+  }
+
+  @media (max-width:485px) {
+    
+    .benefits__title {
+      position: relative;
+      right: 26%;
+    }
+      }

@@ -138,16 +138,18 @@
 }
 
 .page__benefits.benefits {
-  .benefits__title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
-    padding-top: 100px;
-    color: #000000;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 100px;
-    position: relative;
-    right: 25%;
-  }
+  
+}
+.benefits__title {
+  margin-left: 80px !important;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  padding-top: 100px;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 100px;
+  position: relative;
+  right: 32% !important;
 }

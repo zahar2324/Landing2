@@ -67,12 +67,16 @@
   }
 
   &__title {
+    font-size: 24px;
+    font-weight: bold;
     margin-left: 10px;
     padding-top: 100px;
     color: #000000;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 100px;
+    position: relative;
+    right: 34%;
 
     span {
       background-color: #000000;
@@ -82,4 +86,9 @@
       margin-right: 3px;
     }
   }
+}
+
+.gallery__title-container{
+  text-align: center;
+  margin-bottom: 20px;
 }
